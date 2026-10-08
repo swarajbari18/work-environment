@@ -1,0 +1,7 @@
+{
+  "uuid": "wenv-today@local",
+  "name": "WENV Today",
+  "description": "Day and year progress, the next task and a simple task list, drawn on the desktop background.",
+  "shell-version": ["46"],
+  "version": 1
+}
