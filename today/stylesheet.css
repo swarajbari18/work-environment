@@ -1,0 +1,43 @@
+/* Spec palette (section 2): #000 background, #E5E5E5 foreground, #888 secondary, #303030 borders. */
+.wenv-today {
+    min-width: 460px;
+    padding: 0 24px;
+}
+.wenv-today-title {
+    color: #E5E5E5;
+    font-size: 22px;
+}
+.wenv-today-next {
+    color: #E5E5E5;
+    font-size: 17px;
+    margin-top: 16px;
+}
+.wenv-today-muted {
+    color: #888888;
+    font-size: 14px;
+    margin-top: 6px;
+}
+.wenv-today-row {
+    color: #E5E5E5;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 4px 0;
+    font-size: 15px;
+}
+.wenv-today-row:hover {
+    color: #FFFFFF;
+}
+.wenv-today-row-done {
+    color: #888888;
+}
+.wenv-today-entry {
+    color: #E5E5E5;
+    background-color: transparent;
+    border: 1px solid #303030;
+    border-radius: 0;
+    padding: 6px 8px;
+    margin-top: 12px;
+    font-size: 15px;
+    caret-color: #E5E5E5;
+}
