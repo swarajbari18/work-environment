@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Switch the desktop grayscale filter on or off, deliberately (for example, before a game).
+# There is no top-bar control for it on purpose: install-components.sh removes the eye icon.
+#   wenv-color off     colour back on; stays off until you run "on" (also after a log-out)
+#   wenv-color on      grayscale back on
+#   wenv-color status  show the extension state
+set -u
+UUID='colorblind-filters@G-dH.github.com'
+
+case "${1:-}" in
+  on)     gnome-extensions enable "$UUID" ;;
+  off)    gnome-extensions disable "$UUID" ;;
+  status) gnome-extensions info "$UUID" | grep 'State:' ;;
+  *)      echo "usage: wenv-color on|off|status" >&2; exit 2 ;;
+esac
