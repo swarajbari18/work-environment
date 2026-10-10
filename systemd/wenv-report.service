@@ -1,0 +1,8 @@
+[Unit]
+Description=Work environment measurement report
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 @REPO@/report.py --out %h/work-environment-backup/reports/latest.md
+ExecStartPost=/bin/sh -c 'cp %h/work-environment-backup/reports/latest.md %h/work-environment-backup/reports/report-$(date +%%F-%%H).md'

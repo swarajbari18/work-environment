@@ -1,0 +1,7 @@
+[Unit]
+Description=Keep ActivityWatch recording (restart the daemon if the window watcher is missing)
+
+[Service]
+Type=oneshot
+KillMode=process
+ExecStart=@REPO@/aw-watchdog.sh
