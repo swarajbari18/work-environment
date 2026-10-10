@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Third-party programs are downloaded and checked against a pinned hash by install-components.sh.
+/downloads/*
+!/downloads/.gitkeep
+*.part
+*.tmp
+
+# The question bank and the raw datasets it is built from: licences forbid redistributing them,
+# and publishing the bank would publish the answer key.
+bank/
+raw/
+venv/
+.venv/
+*.jsonl
+*.parquet
+
+# State, backups and logs that belong to one machine
+state.tsv
+*.log
+reports/
+freeze-snapshots/
+phase-a-start.txt
+tasks.json
+
+# Editors and desktops
+*.swp
+.DS_Store
